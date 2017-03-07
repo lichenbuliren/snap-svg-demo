@@ -28,13 +28,6 @@ var webpackConfig = {
         use: 'css-loader'
       })
     }, {
-      test: /\.scss/,
-      include: [path.resolve(__dirname, 'src')],
-      use: ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        use: ['css-loader', 'sass-loader']
-      })
-    }, {
       test: /\.js$/,
       include: [path.resolve(__dirname, 'src')],
       loader: 'babel-loader',
